@@ -1,12 +1,16 @@
 // This is not an exercise but a "sandbox" where you can freely test
 // whatever you want
 
+import java.util.Scanner;
+
 public class Application {
-
     public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
 
-        // Write the code here. You can run the code by 
-        // selecting Run->Run File from the menu or by pressing Shift+F6
+        System.out.print("Who is greeted: ");
+        String name = reader.nextLine(); // Reads a line of input from the user and assigns it
+                                         //     to the variable called name
 
+        System.out.print("Hi " + name);
     }
 }
