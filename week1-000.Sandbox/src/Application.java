@@ -7,10 +7,15 @@ public class Application {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
-        System.out.print("Who is greeted: ");
-        String name = reader.nextLine(); // Reads a line of input from the user and assigns it
-                                         //     to the variable called name
-
-        System.out.print("Hi " + name);
+        System.out.println("Up to what number? ");
+        int num1 = Integer.parseInt(reader.nextLine());
+        int num2 = 1;
+        
+        while (num2 <= num1) {
+        System.out.println(num2);
+        num2++;
+        }
+        
+        
     }
 }
